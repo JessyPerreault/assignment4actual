@@ -1,0 +1,352 @@
+/***************************************
+General Styles
+****************************************/
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+h1,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+h1, h5 {
+  font-weight: 700;
+}
+
+h5 {
+  color: rgb(158, 158, 158);
+}
+
+p {
+  font-weight: 300;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  border: 2px solid white;
+  padding: 0;
+  margin: 20px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  height: 40px;
+  width: 100px;
+}
+
+.secondary-button {
+  color: white;
+  border: 2px solid white;
+  padding: 0;
+  margin: 0px 20px;
+  border-radius: 15px;
+  font-weight: 700;
+  height: 80px;
+  width: 100px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+/***************************************
+Hero Section
+****************************************/
+
+.hero {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(./backgrounds/energy-exercise.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(./backgrounds/weigts.jpeg);
+        background-position: 50% 50%;
+        background-size: cover;
+        
+    }
+  }
+
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin: 0 auto;
+  height: auto;
+
+}
+
+.hero-content-box-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  margin-top: 15px;
+  border: 2px solid rgb(143, 143, 143);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  
+}
+
+.hero-content-box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-flow: column, wrap;
+  color: white;
+  margin: 20px 20px;
+  max-width: 400px;
+  width: 300px;
+  height: auto;
+  text-align: left;
+  
+}
+
+.hero-content h1 {
+  text-align: center;
+}
+
+
+.hero2 {
+  background-image: url(./backgrounds/Architecture/moritz-mentges-1144492-unsplash.jpg);
+  background-size: cover;
+  background-position: 50% 52%;
+  height: 80vh;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.menu-button img {
+  width: 30px;
+}
+.menu-button svg {
+  height: 30px;
+  width: 30px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-button #middle-bar,
+.menu-button #bottom-bar {
+  transition: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+.menu-button:hover #middle-bar {
+  transform: rotate(180deg);
+  width: 100px;
+}
+
+.menu-button:hover #bottom-bar {
+  width: 100px;
+}
+
+@media (max-width: 700px) {
+  .menu-button {
+    display: block;
+  }
+
+  .desktop-links {
+    display: none;
+  }
+}
+
+.logo {
+  height: 3em;
+  width: 3em;
+  display: block;
+  fill: currentcolor;
+  color: white;
+}
+
+.logo h1 {
+  padding: 0 auto;
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+}
+
+span.logo {
+    width: 350px;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px 3rem; */
+  align-items: center;
+}
+
+nav ul {
+  margin: 0 10px;
+  padding: 0px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+  padding-right: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 20px 0px 20px 20px;
+  color: white;
+  font-family: "Cinzel", serif;
+  /* border: 2px solid white; */
+  /* background-color: dodgerblue; 
+    border-radius: 10px;   */
+}
+
+/* .nav-fixed {
+    position: fixed;
+    background: red;
+} */
+
+/***************************************
+main Section
+****************************************/
+main {
+  display: flex;
+  align-items: center;
+}
+main img {
+  display: flex;
+  width: 225px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px;
+  padding: 0 auto;
+}
+
+.image-row1 {
+  margin: 50px 20px;
+  padding: 0 auto;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-row2 {
+  margin: 50px 20px;
+  padding: 0 auto;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-container2 img {
+  display: flex;
+  width: 225px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px;
+  padding: 0 auto;
+}
+
+/***************************************
+Footer Section
+****************************************/
+
+footer {
+  margin-top: 80px;
+  padding: 60px 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  .footer-container,
+  .footer-box ul {
+    flex-direction: column;
+  }
+}
+.list-padding {
+  padding: 0px 20px 0px 20px;
+}
+
+.footer-box ul {
+  display: flex;
+}
+footer li a:hover {
+  color: rgb(0, 255, 34);
+  text-decoration: none;
+  font-weight: none;
+}
+
