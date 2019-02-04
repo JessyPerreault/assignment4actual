@@ -81,7 +81,7 @@ Hero Section
       rgba(0, 0, 0, 0) 60%,
       rgba(0, 0, 0, 0.7) 100%
     ),
-    url(./backgrounds/energy-exercise.jpg);
+    url(./backgrounds/equipment.jpg);
   background-size: cover;
   background-position: 50% 50%;
   height: auto;
@@ -91,7 +91,7 @@ Hero Section
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .hero {
         background-image: linear-gradient(
         rgba(0, 0, 0, 0.7) 10%,
@@ -99,12 +99,12 @@ Hero Section
         rgba(0, 0, 0, 0) 60%,
         rgba(0, 0, 0, 0.7) 100%
     ),
-    url(./backgrounds/weigts.jpeg);
+    url(./backgrounds/equipment.jpg);
         background-position: 50% 50%;
         background-size: cover;
         
     }
-  }
+  } */
 
 
 .hero-content {
@@ -115,8 +115,7 @@ Hero Section
   flex-direction: column;
   color: white;
   margin: 0 auto;
-  height: 800px;
-
+  height: auto;
 }
 
 .hero-content-box-container {
@@ -128,26 +127,56 @@ Hero Section
   height: auto;
   width: auto;
   margin-top: 15px;
+  /* border: 2px solid rgb(143, 143, 143);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4); */
+  
+}
+
+.hero-content-box {
+  display: block;
+  
+  /* justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: column; */
+  color: white;
+  margin: 20px 20px;
+  padding: 50px 0;
+  max-width: 300px;
+  width: 200px;
+  height: 300px;
+  text-align: center;
   border: 2px solid rgb(143, 143, 143);
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
   
 }
 
-.hero-content-box {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  flex-flow: column, wrap;
-  color: white;
-  margin: 20px 20px;
-  max-width: 400px;
-  width: 300px;
-  height: auto;
-  text-align: left;
-  
+.button1,
+.button2,
+.button3 {
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+    transform: translate(0px, 30px);
+    opacity: 0;
 }
+
+.box1:hover .button1 {
+    opacity: 1;
+    transform: translate(0px, 0px); 
+}
+
+.box2:hover .button2 {
+    opacity: 1;
+    transform: translate(0px, 0px); 
+}
+
+.box3:hover .button3 {
+    opacity: 1;
+    transform: translate(0px, 0px); 
+}
+
 
 .hero-content-box p {
   font-family: 'Poppins', sans-serif;
@@ -159,6 +188,52 @@ Hero Section
   text-align: center;
   font-family: "Cinzel", serif;
 }
+
+.hero-content-box h4,
+.hero-content-box h3 {
+    font-family: "Cinzel", serif;
+}
+
+.hero-content a {
+    height: auto;
+    width: auto;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content a:hover .hero-content-box {
+    opacity:1;
+    
+}
+
+.sign-up {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-family: "Cinzel", serif;
+    background: rgb(194, 194, 194);
+    border-radius: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.sign-up:hover {
+    border-color: rgb(53, 103, 160);
+    
+}
+
+
+
+/* .hero2 {
+  background-image: url(#);
+  background-size: cover;
+  background-position: 50% 52%;
+  height: 80vh;
+  display: flex;
+  padding-bottom: 40px;
+} */
 
 .menu-button {
   display: none;
@@ -442,6 +517,8 @@ text-align: left;
 .added label {
     margin-right: 10px;
 }
+
+
 
 /*Hide checkbox*/
 .added input[type=checkbox]{
