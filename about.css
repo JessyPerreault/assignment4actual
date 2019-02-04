@@ -2,23 +2,22 @@
 General Styles
 ****************************************/
 a:hover {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .logo {
   text-align: center;
 }
 
-
-h1,
 p,
-a {
-  font-family: "Roboto", sans-serif;
+form {
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
-h1, h5 {
+h1,
+h5 {
   font-weight: 700;
 }
 
@@ -92,20 +91,18 @@ Hero Section
 }
 
 @media screen and (max-width: 600px) {
-    .hero {
-        background-image: linear-gradient(
+  .hero {
+    background-image: linear-gradient(
         rgba(0, 0, 0, 0.7) 10%,
         rgba(0, 0, 0, 0) 50%,
         rgba(0, 0, 0, 0) 60%,
         rgba(0, 0, 0, 0.7) 100%
-    ),
-    url(./backgrounds/weigts.jpeg);
-        background-position: 50% 50%;
-        background-size: cover;
-        
-    }
+      ),
+      url(./backgrounds/weigts.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
   }
-
+}
 
 .hero-content {
   display: flex;
@@ -116,11 +113,10 @@ Hero Section
   color: white;
   margin: 0 auto;
   height: 800px;
-
 }
 
 .hero-content-box-container {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -131,7 +127,6 @@ Hero Section
   border: 2px solid rgb(143, 143, 143);
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
-  
 }
 
 .hero-content-box {
@@ -146,11 +141,10 @@ Hero Section
   width: 300px;
   height: auto;
   text-align: left;
-  
 }
 
 .hero-content-box p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 20px;
   color: #d4d4d4;
 }
@@ -217,8 +211,8 @@ Hero Section
 }
 
 span.logo {
-    width: auto;
-    margin-right: 20px;
+  width: auto;
+  margin-right: 20px;
 }
 
 nav {
@@ -356,26 +350,22 @@ footer li a:hover {
   font-weight: none;
 }
 
-
-
-
-
 /********************
    nav bar hidden 
 ********************/
 
 /*Strip the ul of padding and list styling*/
 .added ul {
-  list-style-type:none;
-  margin:0;
-  padding:0;
-position: absolute;
-text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: left;
 }
 
 /*Create a horizontal list with spacing*/
 .added li {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -384,10 +374,10 @@ text-align: left;
 
 /*Style for menu links*/
 .added li a {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-width:140px;
+  min-width: 140px;
   height: 50px;
   line-height: 50px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -395,7 +385,6 @@ text-align: left;
   background: #2f3036;
   text-decoration: none;
 }
-
 
 /*Style for dropdown links*/
 .added li:hover ul a {
@@ -427,7 +416,6 @@ text-align: left;
   text-align: left;
 }
 
-
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -440,65 +428,62 @@ text-align: left;
 }
 
 .added label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /*Hide checkbox*/
-.added input[type=checkbox]{
+.added input[type="checkbox"] {
   display: none;
 }
 
 /*Show menu when invisible checkbox is checked*/
-.added input[type=checkbox]:checked ~ #menu{
+.added input[type="checkbox"]:checked ~ #menu {
   display: block;
 }
 
-
-.added input[type=checkbox] ~ #menu{
-display: none;
+.added input[type="checkbox"] ~ #menu {
+  display: none;
 }
-
 
 .cf:after {
-content: ' ';
-display: flex;
-clear: both;  
+  content: " ";
+  display: flex;
+  clear: both;
 }
-
 
 /*Responsive Styles*/
 
-@media screen and (max-width : 700px){
+@media screen and (max-width: 700px) {
   /*Make dropdown links appear inline*/
   .added ul {
-      position: relative;
-      display: none;
+    position: relative;
+    display: none;
   }
   /*Create vertical spacing*/
   .added li {
-      margin-bottom: 1px;
+    margin-bottom: 1px;
   }
   /*Make all menu links full width*/
-  .added ul li, li a {
-      width: 100%;
+  .added ul li,
+  li a {
+    width: 100%;
   }
   /*Display 'show menu' link*/
   .show-menu {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
   }
 }
 
-@media screen and (max-width : 500px){
-.added ul li, li a {
-  width: 50px;
-}
+@media screen and (max-width: 500px) {
+  .added ul li,
+  li a {
+    width: 50px;
+  }
 
-.added ul li{
-  justify-content: flex-start;
+  .added ul li {
+    justify-content: flex-start;
+  }
 }
-}
-
-

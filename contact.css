@@ -159,7 +159,6 @@ Columns
   }
 }
 
-
 header {
   display: flex;
   justify-content: center;
@@ -534,7 +533,7 @@ a:hover {
 }
 
 .mcr-column {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 20px;
@@ -556,14 +555,14 @@ a:hover {
 }
 
 .my-creations .mc-image1 {
-    background-image: url(./backgrounds/sports-weights.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    width: 175px;
-    height: 175px;
-    margin: 0 auto;
-    border-radius: 87.5px;
-  }
+  background-image: url(./backgrounds/sports-weights.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  border-radius: 87.5px;
+}
 
 .my-creations p {
   color: #161616;
@@ -587,7 +586,6 @@ p {
   font-family: "Lato", sans-serif;
   font-size: 20px;
 }
-
 
 /***************************************
 Footer Section
@@ -639,6 +637,6 @@ li {
   font-size: 16px;
   padding-right: 20px;
 }
-footer p{
+footer p {
   color: #bebebe;
 }

@@ -36,8 +36,6 @@
   <body>
     <header class="hero" id="hero">
       <nav role="navigation" id="nav">
-          
-          
         <span class="logo" style="font-size: 4em; color: rgb(255, 255, 255);">
           <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -138,7 +136,9 @@
           <h1>Gym Buddies</h1>
         </span>
         <div class="added">
-            <label for="show-menu" class="show-menu"><svg class="menu-button"
+          <label for="show-menu" class="show-menu"
+            ><svg
+              class="menu-button"
               width="30px"
               height="30px"
               viewBox="0 0 100 68"
@@ -162,7 +162,13 @@
                   fill-rule="nonzero"
                 >
                   <g id="Group" transform="translate(81.000000, 48.000000)">
-                    <rect id="top-bar" x="0" y="0" width="100" height="8"></rect>
+                    <rect
+                      id="top-bar"
+                      x="0"
+                      y="0"
+                      width="100"
+                      height="8"
+                    ></rect>
                     <rect
                       id="middle-bar"
                       x="0"
@@ -179,15 +185,20 @@
                     ></rect>
                   </g>
                 </g>
-              </g>
-            </svg></label>
-            <input type="checkbox" id="show-menu" role="button">
-                <ul id="menu">
-                <li><a id="text-mod" href="./about.html">About</a></li>
-                <li><a id="text-mod" href="./products.html">Products</a></li>
-                <li><a id="text-mod" href="./contact.html">Contact</a></li>
-                <li><a id="text-mod" href=""><input type="checkbox" id="show-menu" role="button">Hide Menu</a></li>
-            </ul>
+              </g></svg
+          ></label>
+          <input type="checkbox" id="show-menu" role="button" />
+          <ul id="menu">
+            <li><a id="text-mod" href="./about.html">About</a></li>
+            <li><a id="text-mod" href="./products.html">Products</a></li>
+            <li><a id="text-mod" href="./contact.html">Contact</a></li>
+            <li>
+              <a id="text-mod" href=""
+                ><input type="checkbox" id="show-menu" role="button" />Hide
+                Menu</a
+              >
+            </li>
+          </ul>
         </div>
         <ul class="desktop-links">
           <li><a href="./about.html">About</a></li>
@@ -239,49 +250,56 @@
             </g>
           </svg>
         </button> -->
-        
       </nav>
       <div class="hero-content">
-          <h1>Find your gym buddy!</h1>
-          <p>Get the motivation to build the body you deserve!</p>
-          
-            <div class="hero-content-box-container">
-                <div class="hero-content-box">
-                    <form action="POST">
-                      <input type="text" name="gymname" id="gymname" placeholder="Your Gym Name:"> <br>
-                      <br>
-                      <h5>Looking for:</h5> 
-                      <input type="radio" name="gender" value="male"> Male<br>
-                      <input type="radio" name="gender" value="female"> Female<br>
-                      <input type="radio" name="gender" value="no-preference" checked> No Preference<br>
-                      <br>
-                      <h5>Activity type:</h5>
-                      <select name="activity-type" id="activity-type">
-                        <option value="build-muscle">Build Muscle</option>
-                        <option value="lose-weight">Lose Weight</option>
-                        <option value="tone">Tone</option>
-                        <option value="hiit">H.I.I.T</option>
-                        <option value="circuits">Circuits</option>
-                        <option value="cardio">Cardio</option>
-                      </select>
-                    </form>
-                  </div>
-      
-                  <div class="hero-content-box box-2">
-                    <form action="POST">
-                        <h5>Time Frame:</h5>
-                        <input type="radio" name="time-frame" value="aorning"> Morning<br>
-                        <input type="radio" name="time-frame" value="afternoon"> Afternoon<br>
-                        <input type="radio" name="time-frame" value="after-midnight"> After Midnight<br>
-                      <a class="primary-button" href="#">Get Started</a>
-                    </form>
-                </div>
-            </div>
-        
+        <h1>Find your gym buddy!</h1>
+        <p>Get the motivation to build the body you deserve!</p>
+
+        <div class="hero-content-box-container">
+          <div class="hero-content-box">
+            <form action="POST">
+              <input
+                type="text"
+                name="gymname"
+                id="gymname"
+                placeholder="Your Gym Name:"
+              />
+              <br />
+              <br />
+              <h5>Looking for:</h5>
+              <input type="radio" name="gender" value="male" /> Male<br />
+              <input type="radio" name="gender" value="female" /> Female<br />
+              <input type="radio" name="gender" value="no-preference" checked />
+              No Preference<br />
+              <br />
+              <h5>Activity type:</h5>
+              <select name="activity-type" id="activity-type">
+                <option value="build-muscle">Build Muscle</option>
+                <option value="lose-weight">Lose Weight</option>
+                <option value="tone">Tone</option>
+                <option value="hiit">H.I.I.T</option>
+                <option value="circuits">Circuits</option>
+                <option value="cardio">Cardio</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="hero-content-box box-2">
+            <form action="POST">
+              <h5>Time Frame:</h5>
+              <input type="radio" name="time-frame" value="aorning" />
+              Morning<br />
+              <input type="radio" name="time-frame" value="afternoon" />
+              Afternoon<br />
+              <input type="radio" name="time-frame" value="after-midnight" />
+              After Midnight<br />
+              <a class="primary-button" href="#">Get Started</a>
+            </form>
+          </div>
+        </div>
       </div>
     </header>
 
-    
     <footer>
       <div class="wrapper footer-container">
         <div class="list4 list-padding">
@@ -303,14 +321,14 @@
     </footer>
 
     <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += "responsive";
-          } else {
-            x.className = "topnav";
-          }
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += "responsive";
+        } else {
+          x.className = "topnav";
         }
+      }
     </script>
 
     <!-- <script

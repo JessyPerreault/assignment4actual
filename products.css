@@ -2,14 +2,13 @@
 General Styles
 ****************************************/
 a:hover {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .logo {
   text-align: center;
 }
-
 
 h1,
 p,
@@ -18,7 +17,8 @@ a {
   text-decoration: none;
 }
 
-h1, h5 {
+h1,
+h5 {
   font-weight: 700;
 }
 
@@ -106,7 +106,6 @@ Hero Section
     }
   } */
 
-
 .hero-content {
   display: flex;
   justify-content: center;
@@ -119,7 +118,7 @@ Hero Section
 }
 
 .hero-content-box-container {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -130,12 +129,11 @@ Hero Section
   /* border: 2px solid rgb(143, 143, 143);
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4); */
-  
 }
 
 .hero-content-box {
   display: block;
-  
+
   /* justify-content: center;
   align-content: center;
   align-items: center;
@@ -150,36 +148,34 @@ Hero Section
   border: 2px solid rgb(143, 143, 143);
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
-  
 }
 
 .button1,
 .button2,
 .button3 {
-    font-family: 'Poppins', sans-serif;
-    transition: .5s;
-    transform: translate(0px, 30px);
-    opacity: 0;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+  transform: translate(0px, 30px);
+  opacity: 0;
 }
 
 .box1:hover .button1 {
-    opacity: 1;
-    transform: translate(0px, 0px); 
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
 .box2:hover .button2 {
-    opacity: 1;
-    transform: translate(0px, 0px); 
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
 .box3:hover .button3 {
-    opacity: 1;
-    transform: translate(0px, 0px); 
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
-
 .hero-content-box p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 20px;
   color: #d4d4d4;
 }
@@ -191,40 +187,36 @@ Hero Section
 
 .hero-content-box h4,
 .hero-content-box h3 {
-    font-family: "Cinzel", serif;
+  font-family: "Cinzel", serif;
 }
 
 .hero-content a {
-    height: auto;
-    width: auto;
-    color: white;
-    text-decoration: none;
+  height: auto;
+  width: auto;
+  color: white;
+  text-decoration: none;
 }
 
 .hero-content a:hover .hero-content-box {
-    opacity:1;
-    
+  opacity: 1;
 }
 
 .sign-up {
-    margin-top: 20px;
-    width: 150px;
-    height: 50px;
-    color: rgb(0, 0, 0);
-    font-family: "Cinzel", serif;
-    background: rgb(194, 194, 194);
-    border-radius: 25px;
-    font-size: 25px;
-    cursor: pointer;
-    border: 2px solid white;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  font-family: "Cinzel", serif;
+  background: rgb(194, 194, 194);
+  border-radius: 25px;
+  font-size: 25px;
+  cursor: pointer;
+  border: 2px solid white;
 }
 
 .sign-up:hover {
-    border-color: rgb(53, 103, 160);
-    
+  border-color: rgb(53, 103, 160);
 }
-
-
 
 /* .hero2 {
   background-image: url(#);
@@ -292,8 +284,8 @@ Hero Section
 }
 
 span.logo {
-    width: auto;
-    margin-right: 20px;
+  width: auto;
+  margin-right: 20px;
 }
 
 nav {
@@ -431,26 +423,22 @@ footer li a:hover {
   font-weight: none;
 }
 
-
-
-
-
 /********************
    nav bar hidden 
 ********************/
 
 /*Strip the ul of padding and list styling*/
 .added ul {
-  list-style-type:none;
-  margin:0;
-  padding:0;
-position: absolute;
-text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: left;
 }
 
 /*Create a horizontal list with spacing*/
 .added li {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -459,10 +447,10 @@ text-align: left;
 
 /*Style for menu links*/
 .added li a {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-width:140px;
+  min-width: 140px;
   height: 50px;
   line-height: 50px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -470,7 +458,6 @@ text-align: left;
   background: #2f3036;
   text-decoration: none;
 }
-
 
 /*Style for dropdown links*/
 .added li:hover ul a {
@@ -502,7 +489,6 @@ text-align: left;
   text-align: left;
 }
 
-
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -515,67 +501,62 @@ text-align: left;
 }
 
 .added label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-
-
 /*Hide checkbox*/
-.added input[type=checkbox]{
+.added input[type="checkbox"] {
   display: none;
 }
 
 /*Show menu when invisible checkbox is checked*/
-.added input[type=checkbox]:checked ~ #menu{
+.added input[type="checkbox"]:checked ~ #menu {
   display: block;
 }
 
-
-.added input[type=checkbox] ~ #menu{
-display: none;
+.added input[type="checkbox"] ~ #menu {
+  display: none;
 }
-
 
 .cf:after {
-content: ' ';
-display: flex;
-clear: both;  
+  content: " ";
+  display: flex;
+  clear: both;
 }
-
 
 /*Responsive Styles*/
 
-@media screen and (max-width : 700px){
+@media screen and (max-width: 700px) {
   /*Make dropdown links appear inline*/
   .added ul {
-      position: relative;
-      display: none;
+    position: relative;
+    display: none;
   }
   /*Create vertical spacing*/
   .added li {
-      margin-bottom: 1px;
+    margin-bottom: 1px;
   }
   /*Make all menu links full width*/
-  .added ul li, li a {
-      width: 100%;
+  .added ul li,
+  li a {
+    width: 100%;
   }
   /*Display 'show menu' link*/
   .show-menu {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
   }
 }
 
-@media screen and (max-width : 500px){
-.added ul li, li a {
-  width: 50px;
-}
+@media screen and (max-width: 500px) {
+  .added ul li,
+  li a {
+    width: 50px;
+  }
 
-.added ul li{
-  justify-content: flex-start;
+  .added ul li {
+    justify-content: flex-start;
+  }
 }
-}
-
-
