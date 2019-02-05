@@ -1,6 +1,14 @@
 /***************************************
 General Styles
 ****************************************/
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 
 a:hover {
   text-decoration: none;
@@ -91,7 +99,7 @@ Hero Section
     url(./backgrounds/yoga.jpg);
   background-size: cover;
   background-position: 50% 70%;
-  height: 600px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

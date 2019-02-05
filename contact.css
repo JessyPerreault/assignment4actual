@@ -1,3 +1,9 @@
+html {
+  height: 100%;
+}
+
+
+
 /* * * * * * * * * * * * * * * * * * *
 Columns
 * * * * * * * * * * * * * * * * * * */
@@ -157,6 +163,10 @@ Columns
   .visible-for-large-up {
     display: block;
   }
+}
+
+body {
+  height: 100%;
 }
 
 header {
