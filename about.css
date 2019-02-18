@@ -6,9 +6,9 @@ html {
 /***************************************
 General Styles
 ****************************************/
-body {
+/* body {
   height: 100%;
-}
+} */
 
 a:hover {
   text-decoration: none;
@@ -163,36 +163,6 @@ Hero Section
   font-family: "Cinzel", serif;
 }
 
-.menu-button {
-  display: none;
-}
-
-.menu-button img {
-  width: 30px;
-}
-.menu-button svg {
-  height: 30px;
-  width: 30px;
-}
-
-.menu-button:hover {
-  cursor: pointer;
-}
-
-.menu-button #middle-bar,
-.menu-button #bottom-bar {
-  transition: 0.2s;
-  transform-origin: 50% 50%;
-}
-
-.menu-button:hover #middle-bar {
-  transform: rotate(180deg);
-  width: 100px;
-}
-
-.menu-button:hover #bottom-bar {
-  width: 100px;
-}
 
 @media (max-width: 700px) {
   .menu-button {
@@ -266,10 +236,16 @@ nav a {
     border-radius: 10px;   */
 }
 
-/* .nav-fixed {
-    position: fixed;
-    background: red;
-} */
+.menuButtonBox {
+  display: none;
+}
+
+@media only screen and (max-width:600px) {
+  .menuButtonBox {
+      display: block;
+  }
+}
+
 
 /***************************************
 main Section
@@ -359,140 +335,99 @@ footer li a:hover {
   font-weight: none;
 }
 
-/********************
-   nav bar hidden 
-********************/
+/***********************
+Button Animation
+***********************/
 
-/*Strip the ul of padding and list styling*/
-.added ul {
-  list-style-type: none;
+.menuButton:hover {
+  cursor: pointer;
+}
+
+.menuButtonBox {
+  padding: 0 20px;
+}
+
+#top,
+#middle-right,
+#middle-left,
+#bottom {
+  transition: .5s;
+  transform-origin: 50% 50%;
+}
+
+
+.menuButton:hover #top {
+  transform: translate(200px, 0);
+}
+.menuButton:hover #middle-right {
+  transform: translate(80px, 0);
+}
+.menuButton:hover #middle-left {
+  transform: translate(-80px, 0);
+}
+.menuButton:hover #bottom {
+  transform: translate(-200px, 0);
+}
+
+
+/***********************
+Slide Menu
+***********************/
+
+.slideMenu {
+  /* display: block; */
+  /* justify-content: center;
+  align-items: center; */
+  height: 150px;
+  width: 200px;
+  /* align-self: flex-end; */
+  overflow:hidden;
+  position: absolute;
+  top: 0px;
+  right: -300px;
+  /* transform-origin: 50% 50%; */
+  transition: .7s;
+  padding: 0;
+  margin: 0 0px;;
+  background: #414141;
+  /* border-radius: 10px; */
+
+}
+
+.slideMenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
-  position: absolute;
-  text-align: left;
+  width: 100%;
+  height: auto;
+  
 }
 
-/*Create a horizontal list with spacing*/
-.added li {
+.slideMenu a{
   display: flex;
+  height: 30px;
+  width: 95%;
+  margin: 2px;
+  padding: 0;
   justify-content: center;
   align-items: center;
-  text-align: left;
-  margin-right: 1px;
-}
-
-/*Style for menu links*/
-.added li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 140px;
-  height: 50px;
-  line-height: 50px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  background: #2f3036;
   text-decoration: none;
+  list-style: none;
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.466);
+  border-radius: 30px;
 }
 
-/*Style for dropdown links*/
-.added li:hover ul a {
-  background: #f3f3f3;
-  color: #2f3036;
-  height: 40px;
-  line-height: 40px;
+.slideMenu li {
+  font-size: 20px;
+  color: white;
+  padding: 0;
 }
 
-/*Hover state for dropdown links*/
-
-/*Hide dropdown links until they are needed*/
-.added li ul {
-  display: none;
-}
-
-/*Make dropdown links vertical*/
-.added li ul li {
-  display: flex;
-  float: none;
-  text-align: left;
-}
-
-/*Prevent text wrapping*/
-.added li ul li a {
-  width: auto;
-  min-width: 100px;
-  padding: 0 20px;
-  text-align: left;
-}
-
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #fff;
-  background: #2b2b2b00;
-  text-align: center;
-  padding: 10px 0;
-  display: none;
-}
-
-.added label {
-  margin-right: 10px;
-}
-
-/*Hide checkbox*/
-.added input[type="checkbox"] {
-  display: none;
-}
-
-/*Show menu when invisible checkbox is checked*/
-.added input[type="checkbox"]:checked ~ #menu {
-  display: block;
-}
-
-.added input[type="checkbox"] ~ #menu {
-  display: none;
-}
-
-.cf:after {
-  content: " ";
-  display: flex;
-  clear: both;
-}
-
-/*Responsive Styles*/
-
-@media screen and (max-width: 700px) {
-  /*Make dropdown links appear inline*/
-  .added ul {
-    position: relative;
-    display: none;
-  }
-  /*Create vertical spacing*/
-  .added li {
-    margin-bottom: 1px;
-  }
-  /*Make all menu links full width*/
-  .added ul li,
-  li a {
-    width: 100%;
-  }
-  /*Display 'show menu' link*/
-  .show-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .added ul li,
-  li a {
-    width: 50px;
-  }
-
-  .added ul li {
-    justify-content: flex-start;
-  }
+#closeMenu, .closeMenu {
+  background: none;
+  border: none;
+  transition: .7s;
 }

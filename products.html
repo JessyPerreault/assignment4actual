@@ -40,7 +40,7 @@
   <body>
     <header class="hero" id="hero">
       <nav id="nav">
-        <a href="./index.html">
+        <a href="./gymbuddies.html">
           <span class="logo" style="font-size: 4em; color: rgb(255, 255, 255);">
             <svg
               xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -142,123 +142,41 @@
           </span>
         </a>
 
-        <div class="added">
-          <label for="show-menu" class="show-menu"
-            ><svg
-              class="menu-button"
-              width="30px"
-              height="30px"
-              viewBox="0 0 100 68"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <title>Group</title>
-              <desc>Created with Sketch.</desc>
-              <g
-                id="Page-1"
-                stroke="none"
-                stroke-width="1"
-                fill="none"
-                fill-rule="evenodd"
-              >
-                <g
-                  id="Artboard"
-                  transform="translate(-81.000000, -48.000000)"
-                  fill="#FFFFFF"
-                  fill-rule="nonzero"
-                >
-                  <g id="Group" transform="translate(81.000000, 48.000000)">
-                    <rect
-                      id="top-bar"
-                      x="0"
-                      y="0"
-                      width="100"
-                      height="8"
-                    ></rect>
-                    <rect
-                      id="middle-bar"
-                      x="0"
-                      y="30"
-                      width="75"
-                      height="8"
-                    ></rect>
-                    <rect
-                      id="bottom-bar"
-                      x="0"
-                      y="60"
-                      width="50"
-                      height="8"
-                    ></rect>
-                  </g>
-                </g>
-              </g></svg
-          ></label>
-          <input class="input" type="checkbox" id="show-menu" role="button" />
-          <ul id="menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./index.html">Contact</a></li>
-            <li>
-              <a href=""
-                ><input type="checkbox" id="show-menu" role="button" />Hide
-                Menu</a
-              >
-            </li>
-          </ul>
-        </div>
-
         <ul class="desktop-links">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./index.html">Contact</a></li>
         </ul>
-        <!-- <button class="menu-button">
-          <svg
-            width="100px"
-            height="68px"
-            viewBox="0 0 100 68"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <title>Group</title>
-            <desc>Created with Sketch.</desc>
-            <g
-              id="Page-1"
-              stroke="none"
-              stroke-width="1"
-              fill="none"
-              fill-rule="evenodd"
-            >
-              <g
-                id="Artboard"
-                transform="translate(-81.000000, -48.000000)"
-                fill="#FFFFFF"
-                fill-rule="nonzero"
-              >
-                <g id="Group" transform="translate(81.000000, 48.000000)">
-                  <rect id="top-bar" x="0" y="0" width="100" height="8"></rect>
-                  <rect
-                    id="middle-bar"
-                    x="0"
-                    y="30"
-                    width="75"
-                    height="8"
-                  ></rect>
-                  <rect
-                    id="bottom-bar"
-                    x="0"
-                    y="60"
-                    width="50"
-                    height="8"
-                  ></rect>
-                </g>
-              </g>
-            </g>
-          </svg>
-        </button> -->
+        <div class="menuButtonBox"><svg class="menuButton" width="30" height="30" viewBox="0 0 240 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line id="bottom" y1="190" x2="240" y2="190" stroke="white" stroke-width="40"/>
+          <line id="middle-left" y1="105" x2="120" y2="105" stroke="white" stroke-width="40"/>
+          <line id="middle-right" x1="120" y1="105" x2="240" y2="105" stroke="white" stroke-width="40"/>
+          <line id="top" y1="20" x2="240" y2="20" stroke="white" stroke-width="40"/>
+          </svg>                
+        </div>
       </nav>
+      <div class="slideMenu">
+        <ul>
+            <a class="closeMenu" id="closeMenu" href="#">
+                <li>
+                    <svg width="20" height="20" viewBox="0 0 325 326" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="-20" x2="418.607" y2="-20" transform="matrix(0.707107 0.707107 0.707107 -0.707107 29 1.00003)" stroke="white" stroke-width="70"/>
+                    <line x1="14.8579" y1="310.858" x2="310.858" y2="14.8579" stroke="white" stroke-width="70"/>
+                    </svg>
+                </li>
+            </a>
+            <a class="link1" href="./about.html">
+                <li>About</li>
+            </a>
+            <a class="link2" href="./products.html">
+                <li>Products</li>
+            </a>
+            <a class="link3" href="./index.html">
+                <li>Contact</li>
+            </a>
+            
+        </ul>
+      </div>
       <div class="hero-content">
         <h1>Memberships</h1>
 
@@ -317,6 +235,9 @@
         </div>
       </div>
     </footer>
+
+
+    <script src="./test.js"></script>
 
     <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
