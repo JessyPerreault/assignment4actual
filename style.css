@@ -97,6 +97,7 @@ Hero Section
       rgba(0, 0, 0, 0.7) 100%
     ),
     url(./backgrounds/yoga.jpg);
+    
   background-size: cover;
   background-position: 50% 70%;
   height: 100%;
