@@ -167,6 +167,7 @@ Columns
 
 body {
   height: 100%;
+  min-height: 100%;
 }
 
 header {
@@ -227,7 +228,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   align-self: center;
   flex-wrap: wrap;
   width: 75%;
@@ -566,6 +567,16 @@ a:hover {
 
 .my-creations .mc-image1 {
   background-image: url(./backgrounds/sports-weights.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  border-radius: 87.5px;
+}
+
+.my-creations .mc-image2 {
+  background-image: url(./rick_and_morty_travel/Images/r&mlinkimage.jpg);
   background-size: cover;
   background-position: 50% 50%;
   width: 175px;
