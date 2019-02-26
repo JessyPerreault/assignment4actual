@@ -536,6 +536,8 @@ Footer Section (carried over from home page)
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    height: 100%;
+    min-height: 100%;
 }
 
 #contactBody .row{
