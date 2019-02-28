@@ -383,6 +383,7 @@ Slide Menu
   width: 200px;
   /* align-self: flex-end; */
   overflow:hidden;
+  -webkit-overflow-scrolling: none;
   position: absolute;
   top: 0px;
   right: -300px;

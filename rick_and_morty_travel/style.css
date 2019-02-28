@@ -7,9 +7,15 @@
 /**********************************************************************************************************************************************
                                                                      HomePage
 **********************************************************************************************************************************************/
+
 html {
     height: 100%;
     min-height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
 }
 /***************************
 //General Styles
@@ -56,8 +62,10 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: space-between;
-    height: 90%;
+    width:100%;
+    height: auto;
     padding-bottom: 40px;
+    
 }
 
 #indexBody .topNav {
@@ -323,7 +331,7 @@ footer a {
     background-size: cover;
     background-position: 50% 50%;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 #vpBody #jet {
@@ -386,6 +394,7 @@ footer a {
     flex-direction: column;
     width: 350px;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 #vpBody .row1 {
@@ -827,16 +836,15 @@ Slide Menu
 ***********************/
 
 .slideMenu {
-    /* display: block; */
-    /* justify-content: center;
-    align-items: center; */
-    height: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     width: 200px;
     /* align-self: flex-end; */
     overflow:hidden;
     position: absolute;
-    top: 0px;
-    right: -300px;
+    right: -200px;
     /* transform-origin: 50% 50%; */
     transition: .7s;
     padding: 0;
@@ -852,16 +860,17 @@ Slide Menu
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    overflow:hidden;
     
 }
 
 .slideMenu a{
     display: flex;
     height: 30px;
-    width: 95%;
-    margin: 2px;
+    width: 100%;
+    margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
