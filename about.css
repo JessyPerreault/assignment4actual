@@ -385,7 +385,7 @@ Slide Menu
   -webkit-overflow-scrolling: none;
   position: absolute;
   top: 0px;
-  right: -300px;
+  right: -200px;
   /* transform-origin: 50% 50%; */
   transition: .7s;
   padding: 0;

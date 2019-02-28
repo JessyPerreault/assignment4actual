@@ -5,11 +5,11 @@ var closeMenu = document.querySelector(".closeMenu");
 
 
 menuButton.addEventListener("click", function(event) {
-    slideMenu.style.transform = "translate(-300px, 0)";
+    slideMenu.style.transform = "translate(-200px, 0)";
 });
 
 closeMenu.addEventListener("click", function(event) {
-    slideMenu.style.transform = "translate(300px, 0)";
+    slideMenu.style.transform = "translate(0, 0)";
 });
 
 
